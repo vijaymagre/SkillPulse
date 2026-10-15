@@ -23,7 +23,7 @@ jobs:
             cd ~/SkillPulse
             git pull origin main
             if [ ! -f .env ]; then
-              echo "ERROR: ~/github-actions-skillpulse-d/.env is missing. Create it once with DOCKERHUB_USERNAME and DB credentials."
+              echo "ERROR: ~/SkillPulse/.env is missing. Create it once with DOCKERHUB_USERNAME and DB credentials."
               exit 1
             fi
             docker compose pull
